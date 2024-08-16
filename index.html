@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Les Bonnes Pièces</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="pieces.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="images/logo-les-bonnes-pieces.png" alt="LOGO">
+			<h1>Les Bonnes Pièces</h1>
+		</header>
+		<main>
+			<!-- Menu de recherche -->
+			<section class="filtres">
+				<h3>Filtres</h3>
+				<button class="btn-trier-croissant">Trier par prix croissant</button><br><br>				
+				<button class="btn-trier-decroissant">Trier par prix décroissant</button><br><br>			
+				<button class="btn-filtrer-prix">Filtrer les pièces non abordables</button><br><br>
+				<button class="btn-filtrer-description">Filtrer par pièces ayant une description</button><br><br>
+				<label for="prix-max">Prix maximal</label><br>
+				<input type="range" name="prix-max" id="prix-max" min="0" max="60" step="5" list="markers">
+				<datalist id="markers">
+					<option value="0"></option>
+					<option value="5"></option>
+					<option value="10"></option>
+					<option value="15"></option>
+					<option value="20"></option>
+					<option value="25"></option>
+					<option value="30"></option>
+					<option value="35"></option>
+					<option value="40"></option>
+					<option value="45"></option>
+					<option value="50"></option>
+					<option value="55"></option>
+					<option value="60"></option>
+				  </datalist>
+			</section>
+
+			<!-- Fiches produits -->
+			<section class="fiches">
+				<div class="prix-abordable">
+					<p>Pièces abordables: </p>
+
+				</div>
+				<div class="disponibles">
+					<p>Pièces disponibles: </p>
+
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
